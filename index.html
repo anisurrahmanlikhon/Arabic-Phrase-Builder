@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="ar">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Arabic Sentence Maker</title>
+<link href="src/css/adawatstyle.css" rel="stylesheet">
+<link href="src/css/bootstrap-arabic.min.css" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body style="background-color:#B4A67B45;" dir="rtl">
+<p> 
+
+</p>
+<center><h1><b>Arabic Sentence Maker</b></h1></center>
+<div class="container">
+<div class="row clearfix">
+<div class="col-md-9 column">
+<ul>
+<li><a href="index.html?locale=ar"><b>Arabic</b></a></li>
+<li><a href="index.html?locale=en"><b>English</b></a></li>
+</ul>
+<hr>
+<form id="NewForm" name="NewForm" onsubmit="return false">
+<br><br>  <b>Phrase type:</b> 
+<select id="phrase_type" class="form-inline" name="phrase_type"></select>
+<br> <br> <b>Subject: </b>
+<select id="subject" class="form-inline" name="subject">
+<option value></option>
+</select>
+<br> <br> <b>Auxiliary :</b> 
+<select id="auxiliary" class="form-inline" name="auxiliary">
+<option value></option>
+</select> 
+<br> <br> <b>Verb: </b>
+<select id="verb" class="form-inline" name="verb">
+<option value></option>
+</select> 
+<br> <br> <b>Tense: </b><select id="tense" class="form-inline" name="tense"></select>
+<br> <br> <b>Voice:</b> <select id="voice" class="form-inline" name="voice"></select> 
+<br> <br> <b>Affirmative/Negative:</b>
+<select id="negative" class="form-inline" name="negative">
+</select>
+<br> <br> <b>Object: </b>
+<select id="object" class="form-inline" name="object">
+<option value></option>
+</select> 
+<br> <br> <b>Time: </b>
+<select id="time" class="form-inline" name="time">
+<option value></option>
+</select> 
+<br> <br> <b>Place: </b>
+<select id="place" class="form-inline" name="place">
+<option value></option>
+</select> 
+<br> <br> 
+
+<div class="form-inline">
+<a class="btn btn-primary" id="phrase" >Build</a>
+<a class="btn btn-primary" id="random_select">Random</a>
+<a class="btn btn-primary" id="sample" >Grammar</a>
+<input checked="checked" class="checkbox" id="LastMark" value="1" type="checkbox"> Inflection mark
+</div>
+</form>
+<br>
+
+<output id="result" class="form-control" width="100%%"></output>
+<section class="bg-info" id="small_hint"></section>
+</div>
+<div class="col-md-3 column"> <progress id="loading"></progress></div>
+<section class="bg-info" id="hint"></section>
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-md-9 column"> </div>
+<div class="col-md-3 column"> </div>
+</div>
+<hr>
+
+<div class="container">
+<br>
+<div class="row clearfix">
+<div class="row clearfix" id="myfooter">
+<div class="col-md-3 column" id="myprojects">
+<div class="panel panel-default">
+<div class="panel-body"> 
+<center> <a href = "#" target="blank" > Github Repository </a></center>
+<script>const script="https://tahadz.com/yaziji";</script>
+<script src="src/jquery/jquery.min.js"></script
+<script async src="src/js/bootstrap-arabic.min.js"></script>
+<script async src="src/js/adawat.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
