@@ -77,7 +77,8 @@
 </div>
 
 <div>
-<a href="https://anisurrahmanlikhon.github.io/Translator/" target="blank" class="btn btn-primary" >Check result using Translator </a>
+<div id="copyButton" class="btn btn-primary">Copy Result</div>
+<a href="https://anisurrahmanlikhon.github.io/Translator/" target="blank" class="btn btn-primary" >Check Result</a>
 </div>
 <hr>
 
@@ -103,3 +104,25 @@
 </body>
 
 </html>
+
+<script>
+
+// Select the output element
+const outputElement = document.getElementById("result");
+
+// Select the copy button element
+const copyButton = document.getElementById("copyButton");
+
+// Add click event listener to the copy button
+copyButton.addEventListener("click", function() {
+    // Select the text inside the output element
+    outputElement.select();
+    outputElement.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the selected text
+    document.execCommand("copy");
+
+    // Alert the user that the text has been copied
+    alert("Text copied to clipboard");
+});
+</script>
